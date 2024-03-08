@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="83.258" tests="76" errors="0" skipped="53" failures="21">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Eclipse\New folder (2)\taf\target\test-classes;D:\Eclipse\New folder (2)\taf\target\classes;C:\Users\Boda\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Boda\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Boda\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Boda\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-java\4.14.1\selenium-java-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-api\4.14.1\selenium-api-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.14.1\selenium-chrome-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.14.1\selenium-chromium-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-json\4.14.1\selenium-json-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.14.1\selenium-manager-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.14.1\selenium-devtools-v116-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.14.1\selenium-devtools-v117-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.14.1\selenium-devtools-v118-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.14.1\selenium-devtools-v85-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.14.1\selenium-edge-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.14.1\selenium-firefox-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-http\4.14.1\selenium-http-4.14.1.jar;C:\Users\Boda\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.14.1\selenium-ie-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.14.1\selenium-remote-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Boda\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-os\4.14.1\selenium-os-4.14.1.jar;C:\Users\Boda\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.14.1\selenium-safari-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-support\4.14.1\selenium-support-4.14.1.jar;C:\Users\Boda\.m2\repository\com\google\guava\guava\32.1.3-jre\guava-32.1.3-jre.jar;C:\Users\Boda\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Boda\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Boda\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Boda\.m2\repository\org\checkerframework\checker-qual\3.37.0\checker-qual-3.37.0.jar;C:\Users\Boda\.m2\repository\com\google\errorprone\error_prone_annotations\2.21.1\error_prone_annotations-2.21.1.jar;C:\Users\Boda\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Africa/Cairo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\Boda\AppData\Local\Temp\surefire15525971572288878680\surefirebooter17888566185127262344.jar C:\Users\Boda\AppData\Local\Temp\surefire15525971572288878680 2024-01-06T00-40-30_746-jvmRun1 surefire17789423232085738042tmp surefire_06075862205073494299tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Eclipse\New folder (2)\taf\target\test-classes;D:\Eclipse\New folder (2)\taf\target\classes;C:\Users\Boda\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Boda\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Boda\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Boda\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-java\4.14.1\selenium-java-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-api\4.14.1\selenium-api-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.14.1\selenium-chrome-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.14.1\selenium-chromium-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-json\4.14.1\selenium-json-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.14.1\selenium-manager-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v116\4.14.1\selenium-devtools-v116-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.14.1\selenium-devtools-v117-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.14.1\selenium-devtools-v118-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.14.1\selenium-devtools-v85-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.14.1\selenium-edge-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.14.1\selenium-firefox-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-http\4.14.1\selenium-http-4.14.1.jar;C:\Users\Boda\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.14.1\selenium-ie-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.14.1\selenium-remote-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Boda\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Boda\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-os\4.14.1\selenium-os-4.14.1.jar;C:\Users\Boda\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.14.1\selenium-safari-driver-4.14.1.jar;C:\Users\Boda\.m2\repository\org\seleniumhq\selenium\selenium-support\4.14.1\selenium-support-4.14.1.jar;C:\Users\Boda\.m2\repository\com\google\guava\guava\32.1.3-jre\guava-32.1.3-jre.jar;C:\Users\Boda\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Boda\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Boda\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Boda\.m2\repository\org\checkerframework\checker-qual\3.37.0\checker-qual-3.37.0.jar;C:\Users\Boda\.m2\repository\com\google\errorprone\error_prone_annotations\2.21.1\error_prone_annotations-2.21.1.jar;C:\Users\Boda\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Boda"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Eclipse\New folder (2)\taf"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Boda\AppData\Local\Temp\surefire15525971572288878680\surefirebooter17888566185127262344.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.name" value="Boda"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Boda\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Boda\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="D:\Eclipse\New folder (2)\taf"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-21;D:\Eclipse\New folder (2)\taf\apache-maven-3.9.3\bin\bin;C:\Users\Boda\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Boda\AppData\Local\Programs\Python\Python312\;C:\Users\Boda\AppData\Local\Microsoft\WindowsApps;C:\Users\Boda\AppData\Roaming\npm;C:\Users\Boda\AppData\Local\Programs\Microsoft VS Code\bin;D:\Eclipse\New folder (2)\taf\apache-maven-3.9.3\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="UserCanRegisterSuccessfully" classname="tests.AddProductReviewTest" time="3.065"/>
+  <testcase name="RegisteredUserCanLogin" classname="tests.AddProductReviewTest" time="5.914">
+    <failure message="TypeError: browsingContext.currentWindowGlobal is null&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [56ac8b4a-3d33-4722-a3f3-dd514c4270f5, findElement {using=link text, value=Log in}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17650, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21460, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17650/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 56ac8b4a-3d33-4722-a3f3-dd514c4270f5" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+TypeError: browsingContext.currentWindowGlobal is null
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [56ac8b4a-3d33-4722-a3f3-dd514c4270f5, findElement {using=link text, value=Log in}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17650, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21460, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17650/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56ac8b4a-3d33-4722-a3f3-dd514c4270f5
+	at tests.AddProductReviewTest.RegisteredUserCanLogin(AddProductReviewTest.java:44)
+</failure>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.AddProductReviewTest" time="6.117">
+    <failure message="Failed to decode response from marionette&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [56ac8b4a-3d33-4722-a3f3-dd514c4270f5, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17650, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21460, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17650/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 56ac8b4a-3d33-4722-a3f3-dd514c4270f5" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [56ac8b4a-3d33-4722-a3f3-dd514c4270f5, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17650, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21460, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17650/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 56ac8b4a-3d33-4722-a3f3-dd514c4270f5
+</failure>
+    <system-out><![CDATA[Failed
+Taking Screenshot....
+]]></system-out>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.AddProductReviewTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanSearchUsingAutoSuggest" classname="tests.AddProductReviewTest" time="0">
+    <skipped message="Failed to decode response from marionette&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [56ac8b4a-3d33-4722-a3f3-dd514c4270f5, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17650, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21460, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17650/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 56ac8b4a-3d33-4722-a3f3-dd514c4270f5"/>
+  </testcase>
+  <testcase name="RegisteredUserCanReviewProduct" classname="tests.AddProductReviewTest" time="0">
+    <skipped message="Method tests.AddProductReviewTest.RegisteredUserCanReviewProduct() on instance tests.AddProductReviewTest@25a65b77 depends on not successfully finished methods &#10;[tests.AddProductReviewTest.UserCanSearchUsingAutoSuggest() on instance tests.AddProductReviewTest@25a65b77]"/>
+  </testcase>
+  <testcase name="RegisteredUserCanLogout" classname="tests.AddProductReviewTest" time="0">
+    <skipped message="Method tests.AddProductReviewTest.RegisteredUserCanLogout() on instance tests.AddProductReviewTest@25a65b77 depends on not successfully finished methods &#10;[tests.AddProductReviewTest.RegisteredUserCanReviewProduct() on instance tests.AddProductReviewTest@25a65b77]"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.AddProductReviewTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanCompareProducts" classname="tests.AddProductToCompareTest" time="0.289">
+    <failure message="Failed to decode response from marionette&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [ce103381-e830-4bac-b33a-7eb19bd34f92, findElement {using=id, value=small-searchterms}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17347, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6168, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17347/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: ce103381-e830-4bac-b33a-7eb19bd34f92" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ce103381-e830-4bac-b33a-7eb19bd34f92, findElement {using=id, value=small-searchterms}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17347, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6168, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17347/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce103381-e830-4bac-b33a-7eb19bd34f92
+	at tests.AddProductToCompareTest.UserCanCompareProducts(AddProductToCompareTest.java:26)
+</failure>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.AddProductToCompareTest" time="0.303">
+    <failure message="Tried to run command without establishing a connection&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [ce103381-e830-4bac-b33a-7eb19bd34f92, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17347, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6168, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17347/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: ce103381-e830-4bac-b33a-7eb19bd34f92" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ce103381-e830-4bac-b33a-7eb19bd34f92, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17347, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6168, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17347/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce103381-e830-4bac-b33a-7eb19bd34f92
+</failure>
+    <system-out><![CDATA[Failed
+Taking Screenshot....
+]]></system-out>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.AddProductToCompareTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanClearCompareList" classname="tests.AddProductToCompareTest" time="0">
+    <skipped message="Tried to run command without establishing a connection&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [ce103381-e830-4bac-b33a-7eb19bd34f92, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:17347, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6168, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:17347/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: ce103381-e830-4bac-b33a-7eb19bd34f92"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.AddProductToCompareTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanSearchUsingAutoSuggest" classname="tests.AddProductToShoppingCartTest" time="3.242"/>
+  <testcase name="UserCanAddProductTOCart" classname="tests.AddProductToShoppingCartTest" time="0.001">
+    <failure message="Cannot invoke &quot;pages.ProductDetailsPage.AddToCart()&quot; because &quot;this.detailsObject&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "pages.ProductDetailsPage.AddToCart()" because "this.detailsObject" is null
+	at tests.AddProductToShoppingCartTest.UserCanAddProductTOCart(AddProductToShoppingCartTest.java:36)
+</failure>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.AddProductToShoppingCartTest" time="0.01">
+    <failure message="Tried to run command without establishing a connection&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [dc9f831f-22b5-41b6-9333-1ce2c15f7b7f, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:29492, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11536, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29492/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dc9f831f-22b5-41b6-9333-1ce2c15f7b7f" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+Tried to run command without establishing a connection
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dc9f831f-22b5-41b6-9333-1ce2c15f7b7f, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:29492, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11536, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29492/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc9f831f-22b5-41b6-9333-1ce2c15f7b7f
+</failure>
+    <system-out><![CDATA[Failed
+Taking Screenshot....
+]]></system-out>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.AddProductToShoppingCartTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.AddProductToShoppingCartTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanUpdateShoppingCart" classname="tests.AddProductToShoppingCartTest" time="0">
+    <skipped message="Tried to run command without establishing a connection&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [dc9f831f-22b5-41b6-9333-1ce2c15f7b7f, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:29492, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11536, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29492/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dc9f831f-22b5-41b6-9333-1ce2c15f7b7f"/>
+  </testcase>
+  <testcase name="UserCanRemoveProductFromCart" classname="tests.AddProductToShoppingCartTest" time="0">
+    <skipped message="Tried to run command without establishing a connection&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [dc9f831f-22b5-41b6-9333-1ce2c15f7b7f, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:29492, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11536, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:29492/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dc9f831f-22b5-41b6-9333-1ce2c15f7b7f"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.AddProductToShoppingCartTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="startDriver" classname="tests.AddProductToWishListTest" time="4.937">
+    <failure message="Failed to decode response from marionette&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [dc40f82e-a5fc-452e-a106-e8baa2990a55, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:30358, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19688, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30358/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dc40f82e-a5fc-452e-a106-e8baa2990a55" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [dc40f82e-a5fc-452e-a106-e8baa2990a55, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:30358, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19688, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30358/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc40f82e-a5fc-452e-a106-e8baa2990a55
+</failure>
+  </testcase>
+  <testcase name="UserCanSearchUsingAutoSuggest" classname="tests.AddProductToWishListTest" time="0">
+    <skipped message="Failed to decode response from marionette&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [dc40f82e-a5fc-452e-a106-e8baa2990a55, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:30358, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19688, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30358/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: dc40f82e-a5fc-452e-a106-e8baa2990a55"/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.AddProductToWishListTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanAddProductToWishlist" classname="tests.AddProductToWishListTest" time="0">
+    <skipped message="Method tests.AddProductToWishListTest.UserCanAddProductToWishlist() on instance tests.AddProductToWishListTest@1d548a08 depends on not successfully finished methods &#10;[tests.AddProductToWishListTest.UserCanSearchUsingAutoSuggest() on instance tests.AddProductToWishListTest@1d548a08]"/>
+  </testcase>
+  <testcase name="UserCanRemoveProductFromWishlist" classname="tests.AddProductToWishListTest" time="0">
+    <skipped message="Method tests.AddProductToWishListTest.UserCanRemoveProductFromWishlist() on instance tests.AddProductToWishListTest@1d548a08 depends on not successfully finished methods &#10;[tests.AddProductToWishListTest.UserCanAddProductToWishlist() on instance tests.AddProductToWishListTest@1d548a08]"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.AddProductToWishListTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="startDriver" classname="tests.ChangeCurrencyTest" time="5.295">
+    <failure message="Could not start a new session. Response code 500. Message: Failed to decode response from marionette &#10;Host info: host: &apos;DESKTOP-IP4972A&apos;, ip: &apos;192.168.43.174&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
+Host info: host: 'DESKTOP-IP4972A', ip: '192.168.43.174'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]
+</failure>
+  </testcase>
+  <testcase name="UserCanChangeCurrency" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: Failed to decode response from marionette &#10;Host info: host: &apos;DESKTOP-IP4972A&apos;, ip: &apos;192.168.43.174&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]"/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanSearchUsingAutoSuggest" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: Failed to decode response from marionette &#10;Host info: host: &apos;DESKTOP-IP4972A&apos;, ip: &apos;192.168.43.174&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.ChangeCurrencyTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanUseContactUs" classname="tests.ContactUsTest" time="2.542">
+    <failure message="Browsing context has been discarded&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [6213db14-6d95-43ee-8401-bf6d1f962364, findElement {using=css selector, value=div.result}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:42947, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17540, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42947/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 6213db14-6d95-43ee-8401-bf6d1f962364" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
+Browsing context has been discarded
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6213db14-6d95-43ee-8401-bf6d1f962364, findElement {using=css selector, value=div.result}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:42947, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17540, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42947/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6213db14-6d95-43ee-8401-bf6d1f962364
+	at tests.ContactUsTest.UserCanUseContactUs(ContactUsTest.java:26)
+</failure>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.ContactUsTest" time="2.555">
+    <failure message="WebDriver session does not exist, or is not active&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [6213db14-6d95-43ee-8401-bf6d1f962364, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:42947, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17540, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42947/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 6213db14-6d95-43ee-8401-bf6d1f962364" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+WebDriver session does not exist, or is not active
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6213db14-6d95-43ee-8401-bf6d1f962364, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:42947, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17540, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42947/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6213db14-6d95-43ee-8401-bf6d1f962364
+</failure>
+    <system-out><![CDATA[Failed
+Taking Screenshot....
+]]></system-out>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.ContactUsTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanRegisterSuccessfully" classname="tests.EmailFriendTest" time="0.011">
+    <failure message="WebDriver session does not exist, or is not active&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [1b0f4b7e-d6f5-497f-9be2-929a048eca49, findElement {using=link text, value=Register}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:15404, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11688, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:15404/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 1b0f4b7e-d6f5-497f-9be2-929a048eca49" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+WebDriver session does not exist, or is not active
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1b0f4b7e-d6f5-497f-9be2-929a048eca49, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:15404, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11688, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:15404/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1b0f4b7e-d6f5-497f-9be2-929a048eca49
+	at tests.EmailFriendTest.UserCanRegisterSuccessfully(EmailFriendTest.java:33)
+</failure>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.EmailFriendTest" time="0.053">
+    <failure message="Failed to decode response from marionette&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [1b0f4b7e-d6f5-497f-9be2-929a048eca49, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:15404, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11688, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:15404/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 1b0f4b7e-d6f5-497f-9be2-929a048eca49" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1b0f4b7e-d6f5-497f-9be2-929a048eca49, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:15404, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11688, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:15404/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1b0f4b7e-d6f5-497f-9be2-929a048eca49
+</failure>
+    <system-out><![CDATA[Failed
+Taking Screenshot....
+]]></system-out>
+  </testcase>
+  <testcase name="RegisteredUserCanLogin" classname="tests.EmailFriendTest" time="0">
+    <skipped message="Method tests.EmailFriendTest.RegisteredUserCanLogin() on instance tests.EmailFriendTest@691a7f8f depends on not successfully finished methods &#10;[tests.EmailFriendTest.UserCanRegisterSuccessfully() on instance tests.EmailFriendTest@691a7f8f]"/>
+  </testcase>
+  <testcase name="UserCanSearchUsingAutoSuggest" classname="tests.EmailFriendTest" time="0">
+    <skipped message="Method tests.EmailFriendTest.UserCanSearchUsingAutoSuggest() on instance tests.EmailFriendTest@691a7f8f depends on not successfully finished methods &#10;[tests.EmailFriendTest.UserCanRegisterSuccessfully() on instance tests.EmailFriendTest@691a7f8f]"/>
+  </testcase>
+  <testcase name="RegisteredUserCanSendProductToFriend" classname="tests.EmailFriendTest" time="0">
+    <skipped message="Method tests.EmailFriendTest.RegisteredUserCanSendProductToFriend() on instance tests.EmailFriendTest@691a7f8f depends on not successfully finished methods &#10;[tests.EmailFriendTest.UserCanSearchUsingAutoSuggest() on instance tests.EmailFriendTest@691a7f8f]"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.EmailFriendTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="startDriver" classname="tests.GuestCheckoutProductTest" time="4.297">
+    <failure message="WebDriver session does not exist, or is not active&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [f4135c87-1a19-41f7-a809-7052045e7cad, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:27348, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17868, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27348/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: f4135c87-1a19-41f7-a809-7052045e7cad" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+WebDriver session does not exist, or is not active
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f4135c87-1a19-41f7-a809-7052045e7cad, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:27348, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17868, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27348/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f4135c87-1a19-41f7-a809-7052045e7cad
+</failure>
+  </testcase>
+  <testcase name="UserCanSearchUsingAutoSuggest" classname="tests.GuestCheckoutProductTest" time="0">
+    <skipped message="WebDriver session does not exist, or is not active&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [f4135c87-1a19-41f7-a809-7052045e7cad, maximizeCurrentWindow {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:27348, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17868, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:27348/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: f4135c87-1a19-41f7-a809-7052045e7cad"/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.GuestCheckoutProductTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanAddProductTOCart" classname="tests.GuestCheckoutProductTest" time="0">
+    <skipped message="Method tests.GuestCheckoutProductTest.UserCanAddProductTOCart() on instance tests.GuestCheckoutProductTest@50a7bc6e depends on not successfully finished methods &#10;[tests.GuestCheckoutProductTest.UserCanSearchUsingAutoSuggest() on instance tests.GuestCheckoutProductTest@50a7bc6e]"/>
+  </testcase>
+  <testcase name="UserCanCheckoutProduct" classname="tests.GuestCheckoutProductTest" time="0">
+    <skipped message="Method tests.GuestCheckoutProductTest.UserCanCheckoutProduct() on instance tests.GuestCheckoutProductTest@50a7bc6e depends on not successfully finished methods &#10;[tests.GuestCheckoutProductTest.UserCanAddProductTOCart() on instance tests.GuestCheckoutProductTest@50a7bc6e]"/>
+  </testcase>
+  <testcase name="UserCanViewOrderDetails" classname="tests.GuestCheckoutProductTest" time="0">
+    <skipped message="Method tests.GuestCheckoutProductTest.UserCanViewOrderDetails() on instance tests.GuestCheckoutProductTest@50a7bc6e depends on not successfully finished methods &#10;[tests.GuestCheckoutProductTest.UserCanCheckoutProduct() on instance tests.GuestCheckoutProductTest@50a7bc6e]"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.GuestCheckoutProductTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="startDriver" classname="tests.MyAccountTest" time="4.467">
+    <failure message="Could not start a new session. Response code 500. Message: Failed to decode response from marionette &#10;Host info: host: &apos;DESKTOP-IP4972A&apos;, ip: &apos;192.168.43.174&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
+Host info: host: 'DESKTOP-IP4972A', ip: '192.168.43.174'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]
+</failure>
+  </testcase>
+  <testcase name="UserCanRegisterSuccessfully" classname="tests.MyAccountTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: Failed to decode response from marionette &#10;Host info: host: &apos;DESKTOP-IP4972A&apos;, ip: &apos;192.168.43.174&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]"/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.MyAccountTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="RegisteredUserCanLogin" classname="tests.MyAccountTest" time="0">
+    <skipped message="Method tests.MyAccountTest.RegisteredUserCanLogin() on instance tests.MyAccountTest@161b062a depends on not successfully finished methods &#10;[tests.MyAccountTest.UserCanRegisterSuccessfully() on instance tests.MyAccountTest@161b062a]"/>
+  </testcase>
+  <testcase name="LoggedInUserCanChangePassword" classname="tests.MyAccountTest" time="0">
+    <skipped message="Method tests.MyAccountTest.LoggedInUserCanChangePassword() on instance tests.MyAccountTest@161b062a depends on not successfully finished methods &#10;[tests.MyAccountTest.RegisteredUserCanLogin() on instance tests.MyAccountTest@161b062a]"/>
+  </testcase>
+  <testcase name="RegisteredUserCanLoginAfterChangePassword" classname="tests.MyAccountTest" time="0">
+    <skipped message="Method tests.MyAccountTest.RegisteredUserCanLoginAfterChangePassword() on instance tests.MyAccountTest@161b062a depends on not successfully finished methods &#10;[tests.MyAccountTest.LoggedInUserCanChangePassword() on instance tests.MyAccountTest@161b062a]"/>
+  </testcase>
+  <testcase name="RegisteredUserCanLogout" classname="tests.MyAccountTest" time="0">
+    <skipped message="Method tests.MyAccountTest.RegisteredUserCanLogout() on instance tests.MyAccountTest@161b062a depends on not successfully finished methods &#10;[tests.MyAccountTest.RegisteredUserCanLoginAfterChangePassword() on instance tests.MyAccountTest@161b062a]"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.MyAccountTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="startDriver" classname="tests.ProductHoverMenuTest" time="4.396">
+    <failure message="Could not start a new session. Response code 500. Message: Failed to decode response from marionette &#10;Host info: host: &apos;DESKTOP-IP4972A&apos;, ip: &apos;192.168.43.174&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Failed to decode response from marionette 
+Host info: host: 'DESKTOP-IP4972A', ip: '192.168.43.174'
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]
+</failure>
+  </testcase>
+  <testcase name="UserCanSelectSubCategoryFromMainMenu" classname="tests.ProductHoverMenuTest" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: Failed to decode response from marionette &#10;Host info: host: &apos;DESKTOP-IP4972A&apos;, ip: &apos;192.168.43.174&apos;&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {prefs: {browser.download.dir: D:\Eclipse\New folder (2)\t..., browser.download.folderList: 2, browser.download.manager.showWhenStarting: false, browser.helperApps.neverAsk.saveToDisk: application/octet-stream}}}]}]"/>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.ProductHoverMenuTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.ProductHoverMenuTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanRegisterSuccessfully" classname="tests.RegisteredUserCheckoutProductTest" time="0.015">
+    <failure message="WebDriver session does not exist, or is not active&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [bee778d9-6387-40e2-b0c3-d7c4e37d52d3, findElement {using=link text, value=Register}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:25323, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19984, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25323/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: bee778d9-6387-40e2-b0c3-d7c4e37d52d3" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+WebDriver session does not exist, or is not active
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bee778d9-6387-40e2-b0c3-d7c4e37d52d3, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:25323, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19984, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25323/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bee778d9-6387-40e2-b0c3-d7c4e37d52d3
+	at tests.RegisteredUserCheckoutProductTest.UserCanRegisterSuccessfully(RegisteredUserCheckoutProductTest.java:43)
+</failure>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.RegisteredUserCheckoutProductTest" time="0.055">
+    <failure message="Failed to decode response from marionette&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [bee778d9-6387-40e2-b0c3-d7c4e37d52d3, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:25323, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19984, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25323/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: bee778d9-6387-40e2-b0c3-d7c4e37d52d3" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bee778d9-6387-40e2-b0c3-d7c4e37d52d3, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:25323, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19984, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:25323/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: bee778d9-6387-40e2-b0c3-d7c4e37d52d3
+</failure>
+    <system-out><![CDATA[Failed
+Taking Screenshot....
+]]></system-out>
+  </testcase>
+  <testcase name="RegisteredUserCanLogin" classname="tests.RegisteredUserCheckoutProductTest" time="0">
+    <skipped message="Method tests.RegisteredUserCheckoutProductTest.RegisteredUserCanLogin() on instance tests.RegisteredUserCheckoutProductTest@2d9d4f9d depends on not successfully finished methods &#10;[tests.RegisteredUserCheckoutProductTest.UserCanRegisterSuccessfully() on instance tests.RegisteredUserCheckoutProductTest@2d9d4f9d]"/>
+  </testcase>
+  <testcase name="UserCanSearchUsingAutoSuggest" classname="tests.RegisteredUserCheckoutProductTest" time="0">
+    <skipped message="Method tests.RegisteredUserCheckoutProductTest.UserCanSearchUsingAutoSuggest() on instance tests.RegisteredUserCheckoutProductTest@2d9d4f9d depends on not successfully finished methods &#10;[tests.RegisteredUserCheckoutProductTest.RegisteredUserCanLogin() on instance tests.RegisteredUserCheckoutProductTest@2d9d4f9d]"/>
+  </testcase>
+  <testcase name="UserCanAddProductTOCart" classname="tests.RegisteredUserCheckoutProductTest" time="0">
+    <skipped message="Method tests.RegisteredUserCheckoutProductTest.UserCanAddProductTOCart() on instance tests.RegisteredUserCheckoutProductTest@2d9d4f9d depends on not successfully finished methods &#10;[tests.RegisteredUserCheckoutProductTest.UserCanSearchUsingAutoSuggest() on instance tests.RegisteredUserCheckoutProductTest@2d9d4f9d]"/>
+  </testcase>
+  <testcase name="UserCanCheckoutProduct" classname="tests.RegisteredUserCheckoutProductTest" time="0">
+    <skipped message="Method tests.RegisteredUserCheckoutProductTest.UserCanCheckoutProduct() on instance tests.RegisteredUserCheckoutProductTest@2d9d4f9d depends on not successfully finished methods &#10;[tests.RegisteredUserCheckoutProductTest.UserCanAddProductTOCart() on instance tests.RegisteredUserCheckoutProductTest@2d9d4f9d]"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.RegisteredUserCheckoutProductTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanSearchForProducts" classname="tests.SearchProductTest" time="0.011">
+    <failure message="WebDriver session does not exist, or is not active&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [18ad5bec-b8ec-43ba-8b6f-ea4814945161, findElement {using=id, value=small-searchterms}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:36607, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10788, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36607/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 18ad5bec-b8ec-43ba-8b6f-ea4814945161" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+WebDriver session does not exist, or is not active
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [18ad5bec-b8ec-43ba-8b6f-ea4814945161, findElement {using=id, value=small-searchterms}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:36607, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10788, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36607/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 18ad5bec-b8ec-43ba-8b6f-ea4814945161
+	at tests.SearchProductTest.UserCanSearchForProducts(SearchProductTest.java:20)
+</failure>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.SearchProductTest" time="0.047">
+    <failure message="Failed to decode response from marionette&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [18ad5bec-b8ec-43ba-8b6f-ea4814945161, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:36607, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10788, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36607/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 18ad5bec-b8ec-43ba-8b6f-ea4814945161" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Failed to decode response from marionette
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [18ad5bec-b8ec-43ba-8b6f-ea4814945161, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:36607, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10788, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:36607/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 18ad5bec-b8ec-43ba-8b6f-ea4814945161
+</failure>
+    <system-out><![CDATA[Failed
+Taking Screenshot....
+]]></system-out>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.SearchProductTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="UserCanRegisterSuccessfully" classname="tests.UserRegistrationTest" time="1.232">
+    <failure message="Browsing context has been discarded&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [e8b3e3a7-f4b9-44d7-b96d-af192d74728e, findElement {using=id, value=gender-male}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:38547, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14348, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:38547/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: e8b3e3a7-f4b9-44d7-b96d-af192d74728e" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
+Browsing context has been discarded
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e8b3e3a7-f4b9-44d7-b96d-af192d74728e, findElement {using=id, value=gender-male}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:38547, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14348, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:38547/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e8b3e3a7-f4b9-44d7-b96d-af192d74728e
+	at tests.UserRegistrationTest.UserCanRegisterSuccessfully(UserRegistrationTest.java:22)
+</failure>
+  </testcase>
+  <testcase name="screenshotOnFailure" classname="tests.UserRegistrationTest" time="1.243">
+    <failure message="WebDriver session does not exist, or is not active&#10;Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [e8b3e3a7-f4b9-44d7-b96d-af192d74728e, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:38547, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14348, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:38547/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: e8b3e3a7-f4b9-44d7-b96d-af192d74728e" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+WebDriver session does not exist, or is not active
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e8b3e3a7-f4b9-44d7-b96d-af192d74728e, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0, moz:accessibilityChecks: false, moz:buildID: 20231211174248, moz:debuggerAddress: 127.0.0.1:38547, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14348, moz:profile: C:\Users\Boda\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:38547/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e8b3e3a7-f4b9-44d7-b96d-af192d74728e
+</failure>
+    <system-out><![CDATA[Failed
+Taking Screenshot....
+]]></system-out>
+  </testcase>
+  <testcase name="RegisteredUserCanLogin" classname="tests.UserRegistrationTest" time="0">
+    <skipped message="Method tests.UserRegistrationTest.RegisteredUserCanLogin() on instance tests.UserRegistrationTest@14ec4505 depends on not successfully finished methods &#10;[tests.UserRegistrationTest.UserCanRegisterSuccessfully() on instance tests.UserRegistrationTest@14ec4505]"/>
+  </testcase>
+  <testcase name="RegisteredUserCanLogout" classname="tests.UserRegistrationTest" time="0">
+    <skipped message="Method tests.UserRegistrationTest.RegisteredUserCanLogout() on instance tests.UserRegistrationTest@14ec4505 depends on not successfully finished methods &#10;[tests.UserRegistrationTest.RegisteredUserCanLogin() on instance tests.UserRegistrationTest@14ec4505]"/>
+  </testcase>
+  <testcase name="stopDriver" classname="tests.UserRegistrationTest" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>
