@@ -11,6 +11,7 @@ import pages.SearchPage;
 public class AddProductToCompareTest extends TestBase {
 
 	SearchPage searchObject;
+
 	ProductDetailsPage detailsObject;
 	ComparePage compareObject;
 	String firstName_Product = "Apple MacBook Pro 13-inch";
