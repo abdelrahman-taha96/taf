@@ -62,13 +62,13 @@ public class HomePage extends PageBase {
 	
 	public void selectNotebooksMenu() 
 	{
-		action
+		/*action
 		.moveToElement(ComputerMenu)
 		.click(NotebooksMenu)
 		.build()
-		.perform();
+		.perform();*/
 		
-		/*clickButton(ComputerMenu);
-		clickButton(NotebooksMenu);*/
+		clickButton(ComputerMenu);
+		clickButton(NotebooksMenu);
 	}
 }
