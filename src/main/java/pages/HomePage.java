@@ -68,7 +68,7 @@ public class HomePage extends PageBase {
 		.build()
 		.perform();
 		
-		clickButton(ComputerMenu);
-		clickButton(NotebooksMenu);
+		/*clickButton(ComputerMenu);
+		clickButton(NotebooksMenu);*/
 	}
 }
