@@ -62,10 +62,11 @@ public class HomePage extends PageBase {
 	
 	public void selectNotebooksMenu() 
 	{
-		/*action
-		.clickAndHold(ComputerMenu)
-		.clickAndHold(NotebooksMenu)
-		.perform();*/
+		action
+		.moveToElement(ComputerMenu)
+		.click(NotebooksMenu)
+		.build()
+		.perform();
 		
 		clickButton(ComputerMenu);
 		clickButton(NotebooksMenu);
